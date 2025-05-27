@@ -1,33 +1,29 @@
-/*Create a program to find the youngest friends among 3 Amar, Akbar, and Anthony based on their ages and the tallest among the friends based on their heights
-Hint => 
-Take user input for the age and height of the 3 friends and store it in a variable
-Find the smallest of the 3 ages to find the youngest friend and display it
-Find the largest of the 3 heights to find the tallest friend and display it */
+
 
 import java.util.*;
 public class YoungTall
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
 		
 		// taking user inout for age and height of Amar
         System.out.print("Enter age of Amar: ");
-        int age_Amar = in.nextInt();
+        int age_Amar = input.nextInt();
         System.out.print("Enter height of Amar: ");
-        int height_Amar = in.nextInt();
+        int height_Amar = input.nextInt();
 
 		// taking user inout for age and height of Akbar
         System.out.print("Enter age of Akbar: ");
-        int age_Akbar = in.nextInt();
+        int age_Akbar = input.nextInt();
         System.out.print("Enter height of Akbar: ");
-        int height_Akbar = in.nextInt();
+        int height_Akbar = input.nextInt();
 
 		// taking user inout for age and height of Anthony
         System.out.print("Enter age of Anthony: ");
-        int age_Anthony = in.nextInt();
+        int age_Anthony = input.nextInt();
         System.out.print("Enter height of Anthony: ");
-        int height_Anthony = in.nextInt();
+        int height_Anthony = input.nextInt();
 
 		// Checking for the youngest and printing
         if (age_Amar < age_Akbar && age_Amar < age_Anthony)

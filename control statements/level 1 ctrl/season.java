@@ -1,8 +1,3 @@
-/*Write a program SpringSeason that takes two int values month 
-and day from the command line and prints “Its a Spring Season” otherwise prints “Not a Spring Season” 
-
-Spring Season is from March 20 to June 20
-*/
 
 import java.util.Scanner;
 

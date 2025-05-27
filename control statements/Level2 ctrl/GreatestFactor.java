@@ -1,19 +1,14 @@
-/*Create a program to print the greatest factor of a number beside itself using a loop.
-Hint => 
-Get an integer input and assign it to the number variable. As well as define a greatestFactor variable and assign it to 1
-Create a for loop that runs from last but one till 1 as in i = number - 1 to i = 1.
-Inside the loop, check if the number is perfectly divisible by i then assign i to greatestFactor variable and break the loop.
-Display the greatestFactor variable outside the loop */
+
 
 import java.util.*;
 public class GreatestFactor
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
         int greatestFactor = 1;
         System.out.print("Enter a number: "); //taking user input
-        int number = in.nextInt();
+        int number = input.nextInt();
 
         if (number < 1) // checking for positive number
         {

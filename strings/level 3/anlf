@@ -1,0 +1,106 @@
+1. An organization took up the exercise to find the Body Mass Index (BMI) of all the persons in a team of 10 members. For this create a program to find the BMI and display the height, weight, BMI, and status of each individual
+Hint => 
+Take user input for the person's weight (kg) and height (cm) and store it in the corresponding 2D array of 10 rows. The First Column stores the weight and the second column stores the height in cm
+Create a Method to find the BMI and status of every person given the person's height and weight and return the 2D String array. Use the formula BMI = weight / (height * height). Note unit is kg/m^2. For this convert cm to meter
+Create a Method that takes the 2D array of height and weight as parameters. Calls the user-defined method to compute the BMI and the BMI Status and stores in a 2D String array of height, weight, BMI, and status.
+Create a method to display the 2D string array in a tabular format of Person's Height, Weight, BMI, and the Status
+Finally, the main function takes user inputs, calls the user-defined methods, and displays the result.
+ 
+2. Find unique characters in a string using the charAt() method and display the result
+Hint => 
+Create a Method to find the length of the text without using the String method length()
+Create a method to Find unique characters in a string using the charAt() method and return them as a 1D array. The logic used here is as follows:
+Create an array to store the unique characters in the text. The size is the length of the text
+Loops to Find the unique characters in the text. Find the unique characters in the text using a nested loop. An outer loop iterates through each character and an inner loop checks if the character is unique by comparing it with the previous characters. If the character is unique, it is stored in the result array
+Create a new array to store the unique characters 
+Finally, the main function takes user inputs, calls the user-defined methods, and displays the result. 
+
+3. Write a program to find the first non-repeating character in a string and show the result
+Hint => 
+Non-repeating character is a character that occurs only once in the string
+Create a Method to find the first non-repeating character in a string using the charAt() method and return the character. The logic used here is as follows:
+Create an array to store the frequency of characters in the text. ASCII values of characters are used as indexes in the array to store the frequency of each character. There are 256 ASCII characters
+Loop through the text to find the frequency of characters in the text
+Loop through the text to find the first non-repeating character in the text by checking the frequency of each character
+In the main function take user inputs, call user-defined methods, and displays result. 
+
+4.Write a program to find the frequency of characters in a string using the charAt() method and display the result
+Hint => 
+Create a method to find the frequency of characters in a string using the charAt() method and return the characters and their frequencies in a 2D array. The logic used here is as follows:
+Create an array to store the frequency of characters in the text. ASCII values of characters are used as indexes in the array to store the frequency of each character. There are 256 ASCII characters
+Loop through the text to find the frequency of characters in the text
+Create an array to store the characters and their frequencies
+Loop through the characters in the text and store the characters and their frequencies
+In the main function take user inputs, call user-defined methods, and displays result.  
+
+5. Write a program to find the frequency of characters in a string using unique characters and display the result
+Hint => 
+Create a method to Find unique characters in a string using the charAt() method and return them as a 1D array.  Use Nested Loops to find the unique characters in the text
+Create a method to find the frequency of characters in a string and return the characters and their frequencies in a 2D array. The logic used here is as follows:
+Create an array to store the frequency of characters in the text. ASCII values of characters are used as indexes in the array to store the frequency of each character. There are 256 ASCII characters
+Loop through the text to find the frequency of characters in the text
+Call the uniqueCharacters() method to find the unique characters in the text
+Create a 2D String array to store the unique characters and their frequencies. 
+Loop through the unique characters and store the characters and their frequencies
+In the main function take user inputs, call user-defined methods, and displays result.  
+
+6.Write a program to find the frequency of characters in a string using nested loops and display the result
+Hint => 
+Create a method to find the frequency of characters in a string and return the characters and their frequencies in a 1D array. The logic used here is as follows:
+Create an array to store the frequency of each character in the text and an array to store the characters in the text using the toCharArray() method
+Loops to Find the frequency of each character in the text and store the result in a frequency array. For this use a Nested Loop with an Outer loop to iterate through each character in the text and initialize the frequency of each character to 1. And an Inner loop to check for duplicate characters. In case of duplicate increment the frequency value and set the duplicate characters to '0' to avoid counting them again.
+Create a 1D String array to store the characters and their frequencies. For this Iterate through the characters in the text and store the characters and their frequencies 
+Finally, the main function takes user inputs, calls the user-defined methods, and displays the result. 
+
+7.Write a program to to check if a text is palindrome and display the result
+Hint => 
+A palindrome is a word, phrase, number, or other sequence of characters that reads the same forward and backward
+Logic 1: Write a method to compare the characters from the start and end of the string to determine whether the text is palindrome. The logic used here is as follows:
+Set the start and end indexes of the text
+Loop through the text and compare the characters from the start and the end of the string. If the characters are not equal, return false
+Logic 2: Write a recursive method to compare the characters from the start and end of the text passed as parameters using recursion. The logic used here is as follows:
+First, check if the start index is greater than or equal to the end index, then return true.
+If the characters at the start and end indexes are not equal, return false.
+Otherwise, call the method recursively with the start index incremented by 1 and the end index
+Logic 3: Write a Method to compare the characters from the start and end of the text using character arrays. The logic used here is as follows:
+Firstly Write a Method to reverse a string using the charAt() method and return the reversal array.
+Create a character array using the String method toCharArray() and also create a reverse array. Compare the characters in the original and reverse arrays to do a Palindrome check 
+Finally, in the main method do palindrome check using the three logic and display result
+
+8.Write a program to check if two texts are anagrams and display the result
+Hint => 
+An anagram is a word or phrase formed by rearranging the same letters to form different words or phrases,
+Write a method to check if two texts are anagrams. The logic used here is as follows:
+Check if the lengths of the two texts are equal
+
+9.Create an array to store the frequency of characters in the strings for the two text
+Find the frequency of characters in the two texts using the loop
+Compare the frequency of characters in the two texts. If the frequencies are not equal, return false
+In the main function take user inputs, call user-defined methods, and displays result.  
+Create a program to display a calendar for a given month and year. The program should take the month and year as input from the user and display the calendar for that month. E.g. for 07 2005 user input, the program should display the calendar as shown below
+
+Hint => 
+Write a Method to get the name of the month. For this define a month Array to store the names of the months
+Write a Method to get the number of days in the month. For this define a days Array to store the number of days in each month. For Feb month, check for Leap Year to get the number of days. Also, define a Leap Year Method. 
+Write a method to get the first day of the month using the Gregorian calendar algorithm
+y0 = y − (14 − m) / 12
+x = y0 + y0/4 − y0/100 + y0/400
+m0 = m + 12 × ((14 − m) / 12) − 2
+d0 = (d + x + 31m0 / 12) mod 7
+Displaying the Calendar requires 2 for loops. 
+The first for loop up to the first day to get the proper indentation. As in the example above 3 spaces from Sun to Thu as to be set as July 1st starts on Fri
+The Second for loop Displays the days of the month starting from 1 to the number of days. Add proper indentation for single-digit days using %3d to display the integer right-justified in a field of width 3. Please note to move to the next line after Sat
+
+10.Write a program to create a deck of cards, initialize the deck, shuffle the deck, and distribute the deck of n cards to x number of players. Finally, print the cards the players have.
+Hint => 
+Create a deck of cards with suits "Hearts", "Diamonds", "Clubs", "Spades" and ranks from "2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen", "King", and "Ace"
+Calculate the number of cards in the deck and initialize the deck
+int numOfCards = suits.length * ranks.length;
+Write a Method to Initialize the deck of cards with suits and ranks and return the deck. The deck is an array of strings where each string represents a card in the deck represented as "rank of suit" e.g., "2 of Hearts"
+Write a Method to Shuffle the deck of cards and return the shuffled deck. To shuffle the card iterate over the deck and swap each card with a random card from the remaining deck to shuffle the deck. Please find the steps below
+Step1: Use for Loop Iterate over the deck and swap each card with a random card from the remaining deck
+Step 2: Inside the Loop Generate a random card number between i and n using the following code 
+int randomCardNumber = i + (int) (Math.random() * (n - i));
+Step 3: Swap the current card with the random card
+Write a Method to distribute the deck of n cards to x number of players and return the players. For this Check the n cards can be distributed to x players. If possible then Create a 2D array to store the players and their cards
+Write a Method to Print the players and their cards

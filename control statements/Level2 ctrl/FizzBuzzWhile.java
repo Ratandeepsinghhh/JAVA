@@ -1,14 +1,13 @@
-/*Rewrite the FizzBuzz program using while loop  */
 
 import java.util.*;
 public class FizzBuzzWhile
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
         int i = 1;
        System.out.print("Enter a number: "); // taking user input
-        int number = in.nextInt();
+        int number = input.nextInt();
 
         if (number < 1) // checking for positive number
         {

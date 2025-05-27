@@ -1,18 +1,14 @@
-/* Create a program to print odd and even numbers between 1 to the number entered by the user.
-Hint => 
-Get an integer input from the user, assign to a variable number and check for Natural Number
-Using a for loop, iterate from 1 to the number
-In each iteration of the loop, print the number is odd or even number */
+
 
 import java.util.*;
 public class OddEven 
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
 
         System.out.print("Enter a number: "); // taking user input
-        int number = in.nextInt();
+        int number = input.nextInt();
 
         if (number < 1) // checking for positive number
         {

@@ -3,15 +3,15 @@ public class Copy
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
 
         int index = 0;
 
         // Taking input from the user
         System.out.print("Enter number of rows: ");
-        int rows = in.nextInt();
+        int rows = input.nextInt();
         System.out.print("Enter number of Columns: ");
-        int columns = in.nextInt();
+        int columns = input.nextInt();
 
         int array[] = new int[rows * columns];
         int arr[][] = new int[rows][columns];
@@ -22,7 +22,7 @@ public class Copy
             System.out.println("Enter Elements of " + (i + 1) + " row: ");
             for (int j = 0; j < columns; j++)
             {
-                arr[i][j] = in.nextInt();
+                arr[i][j] = input.nextInt();
             }
         }
 

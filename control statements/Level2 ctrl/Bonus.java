@@ -9,12 +9,12 @@ public class Bonus
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
         double total = 0.0, bonus = 0.0;
         System.out.print("Enter Salary: "); // taking salary as user input
-        double salary = in.nextDouble();
+        double salary = input.nextDouble();
         System.out.print("Enter Year: "); // taking years as user input
-        int years = in.nextInt();
+        int years = input.nextInt();
 
         if (years > 5) // check if years is greater than 5
         {

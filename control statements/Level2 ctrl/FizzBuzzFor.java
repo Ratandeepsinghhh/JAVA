@@ -1,16 +1,13 @@
-/*Write a program FizzBuzz, take a number as user input, and if it is a positive integer loop from 0 to the number and print the number, but for multiples of 3 print "Fizz" instead of the number, for multiples of 5 print "Buzz", and for multiples of both print "FizzBuzz".
-Hint => 
-Write the program and use for loop */
 
 import java.util.*;
 public class FizzBuzzFor
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
 
         System.out.print("Enter a number: "); // taking user input
-        int number = in.nextInt();
+        int number = input.nextInt();
 
         if (number < 1) // checking for positive number
         {

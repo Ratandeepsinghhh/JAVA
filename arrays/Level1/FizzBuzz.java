@@ -5,11 +5,11 @@ public class FizzBuzz
 {
     public static void main(String[] args)
     {
-        Scanner in = new Scanner (System.in);
+        Scanner input = new Scanner (System.in);
 
         // taking user input
         System.out.print("Enter a number: "); 
-        int number = in.nextInt();
+        int number = input.nextInt();
 
         // checking for positive number
         if (number < 1) 
@@ -49,6 +49,6 @@ public class FizzBuzz
         }
 
         // Close the scanner
-        in.close();
+        input.close();
     }
 }
